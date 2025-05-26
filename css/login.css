@@ -2,18 +2,22 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to top, #fff6f6, #2b2929);
+  background-image: url('../img/Fondoposter.jpg'); /* Ahora apunta a la carpeta img */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Contenedor del login con fondo blanco y ligera transparencia */
 .login-container {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco semitransparente */
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   width: 300px;
   text-align: center;
 }
@@ -56,7 +60,7 @@ button {
 
 button:hover {
   background-color: #faf8f8;
-  color:#111;
+  color: #111;
   border: 1px solid #111;
 }
 
