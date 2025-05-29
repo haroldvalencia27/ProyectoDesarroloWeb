@@ -336,7 +336,7 @@ th, td {
 }
 
 
-@media (max-widtg:991px) {
+@media (max-width:991px) {
     .menu {
         padding: 20px;
     }
