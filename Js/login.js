@@ -5,7 +5,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   const password = document.getElementById("password").value.trim();
   const errorDisplay = document.getElementById("error");
 
-  // Usuarios hardcodeados (para práctica sin localStorage)
+  //Usuarios hardcodeados (para práctica sin localStorage)
   const usuariosValidos = [
     { usuario: "admin", clave: "1234" },
     { usuario: "leperfumer", clave: "perfumito" }
@@ -18,9 +18,9 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
   if (usuarioEncontrado) {
     errorDisplay.textContent = "";
     alert("¡Bienvenido a LE PERFUM!");
-    // Aquí podrías redirigir a otra página si quisieras
+    //Aquí podrías redirigir a otra página si se necesita
     window.location.href = "index.html";
   } else {
-    errorDisplay.textContent = "Usuario o contraseña incorrectos.";
+    errorDisplay.textContent = "Usuario o contraseña incorrecta.";
   }
 });
